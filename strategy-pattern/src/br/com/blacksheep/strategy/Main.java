@@ -11,7 +11,7 @@ public class Main {
 		try (Scanner input = new Scanner(System.in)) {
 			System.out.println("Digite o número de telefone para ser discado: ");
 			Integer numberToCall = input.nextInt();
-			System.out.println("Digite o tipo de chamada: ");
+			System.out.println("Digite o tipo de chamada: [1] - Á Cobrar; [2] - Local; [3] - Internacional; ");
 			int callType = input.nextInt();
 			MobilePhone mobilePhone = new MobilePhone();
 			try {
