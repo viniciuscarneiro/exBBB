@@ -1,9 +1,9 @@
 package br.com.blacksheep.observer;
 
 import java.time.LocalTime;
-import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Porteiro extends Thread {
 
