@@ -1,4 +1,4 @@
 exBBB
 =====
 
-Repositório de exemplo de ex-brothers
+Repositório de exemplos de ex-brothers
