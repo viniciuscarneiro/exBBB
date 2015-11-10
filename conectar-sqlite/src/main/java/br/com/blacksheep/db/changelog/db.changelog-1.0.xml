@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+	<changeSet author="vinicius" id="changelog-1.0">
+		<createTable tableName="CATEGORIA_PRODUTO">
+			<column name="ID" type="bigint">
+				<constraints nullable="false" primaryKey="true" />
+			</column>
+			<column name="CODIGO_CATEGORIA" type="nvarchar(100)" />
+			<column name="GRUPO_CATEGORIA" type="bigint" />
+			<column name="NOME_CATEGORIA" type="nvarchar(100)" />
+			<column name="IMG40" type="BLOB" />
+			<column name="IMG80" type="BLOB" />
+			<column name="IMG120" type="BLOB" />
+			<column name="IMG160" type="BLOB" />
+			<column name="IMG240" type="BLOB" />
+			<column name="STATUS_CATEGORIA" type="nvarchar(100)" defaultValue="disponível"/>
+			<column name="DATA_CRIACAO" type="datetime" />
+			<column name="ULTIMA_ATUALIZACAO" type="datetime" />
+		</createTable>
+	</changeSet>
+</databaseChangeLog>
