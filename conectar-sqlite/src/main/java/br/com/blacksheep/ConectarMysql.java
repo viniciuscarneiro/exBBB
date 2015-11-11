@@ -8,7 +8,7 @@ public class ConectarMysql {
 
 	public static void main(String[] args) {
 		try {
-			MySql dataBase = new MySql("com.mysql.jdbc.Driver", "root", "root", "localhost:3306", "atendi");
+			MySql dataBase = new MySql("root", "root", "localhost:3306", "atendi");
 
 			Connection conn = ConnectionFactory.createConnection(dataBase);
 

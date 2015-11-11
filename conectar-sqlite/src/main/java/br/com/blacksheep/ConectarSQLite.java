@@ -10,7 +10,8 @@ public class ConectarSQLite {
 
 	public static void main(String[] args) {
 		try {
-			SQLite dataBase = new SQLite("org.sqlite.JDBC", null, null, "/home/vinicius-brito/Desktop/", "AtendiServidorFotoPadrao.sqlite");
+			SQLite dataBase = new SQLite(null, null, "/home/vinicius-brito/Desktop/",
+					"AtendiServidorFotoPadrao.sqlite");
 
 			Connection conn = ConnectionFactory.createConnection(dataBase);
 

@@ -4,8 +4,10 @@ import org.sqlite.JDBC;
 
 public class SQLite extends DataBase {
 
-	public SQLite(String driver, String user, String password, String server, String dataBase) {
-		super(driver, user, password, server, dataBase);
+	public final static DataBaseDriver DRIVER = DataBaseDriver.SQLITE;
+
+	public SQLite(String user, String password, String server, String dataBase) {
+		super(SQLite.DRIVER.getDriver(), user, password, server, dataBase);
 	}
 
 	@Override
