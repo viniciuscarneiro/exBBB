@@ -8,12 +8,14 @@ import br.com.blacksheep.domain.ConnectionFactory;
 import br.com.blacksheep.domain.DataBase;
 import br.com.blacksheep.enums.DatabaseEnum;
 
-public class ConectarMysql {
+public class ConectarGenerico {
 
 	public static void main(String[] args) {
 		try {
 			DataBase dataBase = DatabaseEnum.MYSQL.getDatabase("root", "root", "localhost:3306", "atendi");
+
 			Connection conn = ConnectionFactory.createConnection(dataBase);
+
 			String query = "SELECT * FROM CATEGORIA_PRODUTO";
 			Statement st = conn.createStatement();
 			ResultSet executedQuery = st.executeQuery(query);

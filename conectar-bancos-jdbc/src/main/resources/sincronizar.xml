@@ -1,0 +1,2071 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sincronizacao>
+
+	<agendamento>
+		<execucaoInicio hora="00" minuto="00" />
+		<execucaoIntervalo hora="24" minuto="0" />
+	</agendamento>
+
+	<banco id="banco-origem-atendi">
+		<bancoEnum>SQLITE</bancoEnum>
+		<server>/home/vinicius-brito/Desktop/</server>
+		<database>AtendiServidorFotoPadrao.sqlite</database>
+		<user></user>
+		<password></password>
+	</banco>
+
+	<banco id="banco-destino-atendi-nuvem">
+		<bancoEnum>MYSQL</bancoEnum>
+		<server>localhost:3306</server>
+		<database>atendi</database>
+		<user>root</user>
+		<password>root</password>
+	</banco>
+
+	<delecaoConteudo bancoId="banco-destino-transparencia">
+		<tabela nome="TBAFADM" />
+		<tabela nome="TBAFRSTPGO" />
+		<tabela nome="TBAFMOVEPE" />
+		<tabela nome="TBAFCADEPE" />
+		<tabela nome="TBAFRLZDSPOCD" />
+		<tabela nome="TBAFDSPOCD" />
+		<tabela nome="TBAFRCTOCD" />
+		<tabela nome="TBAFARRRCT" />
+		<tabela nome="dbo.tbrhpssfix" />
+		<tabela nome="TbRhPssMns" />
+		<tabela nome="TbRhPnsVtc" />
+		<tabela nome="dbo.TbRhCrgFun" />
+		<tabela nome="TbRhFinBse" />
+		<tabela nome="dbo.TbRhSal" />
+		<tabela nome="dbo.TBRHVBAINC" />
+		<tabela nome="dbo.TBRHFINVBA" />
+		<tabela nome="TBAFADM" />
+		<tabela nome="TBAFADMPMT" />
+		<tabela nome="TBAFARRRCT" />
+		<tabela nome="TBAFARRRCTEXT" />
+		<tabela nome="TBAFARRRCTRES" />
+		<tabela nome="TBAFBCOCTB" />
+		<tabela nome="TBAFCADEPE" />
+		<tabela nome="TBAFCLFMOV" />
+		<tabela nome="TBAFDESCTBCNT" />
+		<tabela nome="TBAFDESROT" />
+		<tabela nome="TBAFDESSIS" />
+		<tabela nome="TBAFDESTIT1" />
+		<tabela nome="TBAFDESTIT10" />
+		<tabela nome="TBAFDESTIT11" />
+		<tabela nome="TBAFDESTIT2" />
+		<tabela nome="TBAFDESTIT3" />
+		<tabela nome="TBAFDESTIT4" />
+		<tabela nome="TBAFDESTIT5" />
+		<tabela nome="TBAFDESTIT6" />
+		<tabela nome="TBAFDESTIT7" />
+		<tabela nome="TBAFDESTIT8" />
+		<tabela nome="TBAFDESTIT9" />
+		<tabela nome="TBAFDSPEXT" />
+		<tabela nome="TBAFEVT" />
+		<tabela nome="TBAFFLUCXA" />
+		<tabela nome="TBAFGRPCNT" />
+		<tabela nome="TBAFMOVEPE" />
+		<tabela nome="TBAFMOVEPERST" />
+		<tabela nome="TBAFRCTCNTVCL" />
+		<tabela nome="TBAFRCTOCD" />
+		<tabela nome="TBAFRLZDSPOCD" />
+		<tabela nome="TBAFRLZRCTOCD" />
+		<tabela nome="TBAFRSTPGO" />
+		<tabela nome="TBAFTIPCNT" />
+		<tabela nome="TBAFTIPCNTBCO" />
+		<tabela nome="TBAFTIPEPE" />
+		<tabela nome="TBAFTIPFLXMOV" />
+		<tabela nome="TBAFTIPLMTCNT" />
+		<tabela nome="TBTIPADM" />
+		<tabela nome="TBTIPRGMEXC" />
+		<tabela nome="TbBai" />
+		<tabela nome="TBCID" />
+		<tabela nome="TbEmp" />
+		<tabela nome="TBEST" />
+		<tabela nome="TBFRN" />
+		<tabela nome="TbLgr" />
+		<tabela nome="TbTipLgr" />
+		<tabela nome="TBSUBELEECO" />
+		<tabela nome="TBPRJATI" />
+		<tabela nome="TBUNDOCD" />
+		<tabela nome="TBFUNGOV" />
+		<tabela nome="TBSUBITERCT" />
+		<tabela nome="TBITERCT" />
+		<tabela nome="TBSUBALNRCT" />
+		<tabela nome="TBALNRCT" />
+		<tabela nome="TBRUBRCT" />
+		<tabela nome="TBFTERCT" />
+		<tabela nome="TBSUBCTGRCT" />
+		<tabela nome="TBCTGRCT" />
+		<tabela nome="TBALNRCT" />
+		<tabela nome="TBCTGECO" />
+		<tabela nome="TBCTGRCT" />
+		<tabela nome="TBDDBDSP" />
+		<tabela nome="TBDDBRCT" />
+		<tabela nome="TBELEECO" />
+		<tabela nome="TBFTERCT" />
+		<tabela nome="TBFUNGOV" />
+		<tabela nome="TBITEDSP" />
+		<tabela nome="TBITERCT" />
+		<tabela nome="TBORGGOV" />
+		<tabela nome="TBPPPRG" />
+		<tabela nome="TBPPTIPACO" />
+		<tabela nome="TBPRJATI" />
+		<tabela nome="TBRCSELB" />
+		<tabela nome="TBRUBRCT" />
+		<tabela nome="TBSUBALNRCT" />
+		<tabela nome="TBSUBCTGECO" />
+		<tabela nome="TBSUBCTGRCT" />
+		<tabela nome="TBSUBELEECO" />
+		<tabela nome="TBSUBFUNGOV" />
+		<tabela nome="TBSUBITEDSP" />
+		<tabela nome="TBSUBITERCT" />
+		<tabela nome="TBSUBPRJATI" />
+		<tabela nome="TBSUBRCSELB" />
+		<tabela nome="TBSUBRCSFTEDTLELB" />
+		<tabela nome="TBSUBRCSFTEELB" />
+		<tabela nome="TBSUBUNDOCD" />
+		<tabela nome="TBUNDOCD" />
+		<tabela nome="dbo.tbsglct" />
+		<tabela nome="DBO.tbsgsacsctt" />
+		<tabela nome="dbo.tbsgmodlct" />
+		<tabela nome="dbo.TBSGFSEPRS" />
+		<tabela nome="TbSgObjLct" />
+		<tabela nome="TbSgMapLct" />
+		<tabela nome="TbSgMovPcp" />
+		<tabela nome="TbSgPcpLct" />
+		<tabela nome="TBSGCRTJLG" />
+		<tabela nome="TBSGCNDPGT" />
+		<tabela nome="TBSGDSCPRZLCT" />
+		<tabela nome="TbsgPrsLctDspOcd" />
+		<tabela nome="TbSgFrnLct" />
+		<tabela nome="TBSGHOM" />
+		<tabela nome="TbSgMtl" />
+		<tabela nome="TbSgAdj" />
+		<tabela nome="TBSGCENCSTLCT" />
+		<tabela nome="TBSGSACSITECTT" />
+	</delecaoConteudo>
+	
+	<execucaoDeParaLista>
+		<execucaoDePara nome="tbafadmCTB-tbafadmTransparencia">
+			<valor de="1" para="1" />
+			<valor de="2" para="2" />
+			<valor de="3" para="3" />
+			<valor de="4" para="4" />
+			<valor de="5" para="5" />
+			<valor de="6" para="6" />
+			<valor de="7" para="7" />
+			<valor de="8" para="8" />
+		</execucaoDePara>
+	</execucaoDeParaLista>
+	<sincronizacaoBancoLista>
+		<sincronizacaoBanco origemId="banco-origem-dbctb" destinoId="banco-destino-transparencia">
+			<sincronizacaoTabela origem="TBAFADM" destino="TBAFADM">
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="desadm" destino="desadm" />
+				<campo origem="codlgr" destino="codlgr" />
+				<campo origem="cplendadm" destino="cplendadm" />
+				<campo origem="codbai" destino="codbai" />
+				<campo origem="codcid" destino="codcid" />
+				<campo origem="sglest" destino="sglest" />
+				<campo origem="numendadm" destino="numendadm" />
+				<campo origem="cep" destino="cep" />
+				<campo origem="insestadm" destino="insestadm" />
+				<campo origem="tlfadm" destino="tlfadm" />
+				<campo origem="faxadm" destino="faxadm" />
+				<campo origem="cgcadm" destino="cgcadm" />
+				<campo origem="slgadm" destino="slgadm" />
+				<campo origem="flgcld" destino="flgcld" />
+				<campo origem="databertura" destino="databertura" />
+				<campo origem="datfechamento" destino="datfechamento" />
+				<campo origem="codmuntc" destino="codmuntc" />
+				<campo origem="CONVERT (date, SYSDATETIME())" destino="datlmt" />
+				<campo origem="'sem e-mail'" destino="email" />
+				<campo origem="tipadm" destino="tipadm" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela destino="TBAFRSTPGO">
+				<sql>
+					<![CDATA[
+						SELECT
+						    NumEpe,
+						    PclEpe,
+						    ANOREF,
+						    AnoRst,
+						    CodFrn,
+						    CodAdm,
+						    VlrEpe,
+						    DatEpe,
+						    CodOrg,
+						    CodUnd,
+						    CodSubUndOcd,
+						    CodFunGov,
+						    CodPrgGov,
+						    CodPrg,
+						    CodAti,
+						    CodPrjAti,
+						    CodCtgEco,
+						    CodSubPrjAti,
+						    CodSubCtgEco,
+						    CodEleEco,
+						    CodSubEleEco,
+						    CodIteDsp,
+						    CodSubIteDsp,
+						    CntRst,
+						    CodDdbDsp,
+						    CodVcl,
+						    CodPrc,
+						    Datliq,
+						    VlrEpeOri,
+						    AnoSvc,
+						    TipSvc,
+						    TipDsp,
+						    ctbcnt =isnull(
+							(
+								SELECT
+									CLFCNTTCE
+								FROM
+									DBO.TBAFDESCTBCNT
+								WHERE
+									CODCNT = rst.cntrst
+								AND ANOREF = rst.ANOREF
+								AND CODADM = rst.CODADM),'000000000000000')
+						FROM
+						    TbAfRstPgo rst
+					]]>
+				</sql>
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="anorst" destino="anorst" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="vlrepe" destino="vlrepe" />
+				<campo origem="datepe" destino="datepe" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="CODPRGGOV" destino="codsubfungov" />
+				<campo origem="codprg" destino="codprg" />
+				<campo origem="CODATI" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubprjati" destino="codsubprjati" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="codddbdsp" destino="codddbdsp" />
+				<campo origem="codvcl" destino="codvcl" />
+				<campo origem="codprc" destino="codprc" />
+				<campo origem="datliq" destino="datliq" />
+				<campo origem="vlrepeori" destino="vlrepeori" />
+				<campo origem="anosvc" destino="anosvc" />
+				<campo origem="tipsvc" destino="tipsvc" />
+				<campo origem="tipdsp" destino="tipdsp" />
+				<campo origem="ctbcnt" destino="ctbcnt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFMOVEPE" destino="TBAFMOVEPE">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="seqmov" destino="seqmov" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="nummov" destino="nummov" />
+				<campo origem="numdoc" destino="numdoc" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="vlrmov" destino="vlrmov" />
+				<campo origem="sldftercs" destino="sldftercs" />
+				<campo origem="sldtot" destino="sldtot" />
+				<campo origem="sldepe" destino="sldepe" />
+				<campo origem="hstepe" destino="hstepe" />
+				<campo origem="numprspgo" destino="numprspgo" />
+				<campo origem="vlranuepectt" destino="vlranuepectt" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="hramov" destino="hramov" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFCADEPE" destino="TBAFCADEPE">
+				<campo origem="0" destino="codusr" />
+				<campo origem="anoref" destino="tiprgmexc" />
+				<campo origem="datepe" destino="datlmt" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="codmod" destino="codmod" />
+				<campo origem="tipdsp" destino="tipdsp" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="datepe" destino="datepe" />
+				<campo origem="vlrepe" destino="vlrepe" />
+				<campo origem="lctepe" destino="lctepe" />
+				<campo origem="prsepe" destino="prsepe" />
+				<campo origem="datvncepe" destino="datvncepe" />
+				<campo origem="sldantdsp" destino="sldantdsp" />
+				<campo origem="desepe" destino="desepe" />
+				<campo origem="codobr" destino="codobr" />
+				<campo origem="anoobr" destino="anoobr" />
+				<campo origem="numepecpl" destino="numepecpl" />
+				<campo origem="anoctt" destino="anoctt" />
+				<campo origem="numctt" destino="numctt" />
+				<campo origem="anosvc" destino="anosvc" />
+				<campo origem="tipsvc" destino="tipsvc" />
+				<campo origem="numpot" destino="numpot" />
+				<campo origem="anopot" destino="anopot" />
+				<campo origem="numadt" destino="numadt" />
+				<campo origem="TIPEPE" destino="TIPEPE" />
+				<campo origem="coddsp" destino="coddsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFCNTRCSRLZ" destino="TBAFRLZDSPOCD">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="coddspocd" destino="coddspocd" />
+				<campo origem="mesref" destino="mesref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="VLREPERCS" destino="vlrepedsp" />
+				<campo origem="VLRANURCS" destino="vlranudsp" />
+				<campo origem="VLRLIQRCS" destino="vlrliqdsp" />
+				<campo origem="VLRPGORCS" destino="vlrpgodsp" />
+				<campo origem="VLRSPMRCS" destino="vlrspmdsp" />
+				<campo origem="VLRRDCRCS" destino="vlrrdcdsp" />
+				<campo origem="VLRPCLRCS" destino="vlrpcldsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDSPOCD" destino="TBAFDSPOCD">
+				<campo origem="CONVERT (date, SYSDATETIME())" destino="datlmt" />
+				<campo origem="0" destino="codredaco" />
+				<campo origem="0" destino="codusr" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="coddspocd" destino="coddspocd" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="CODPRGGOV" destino="codsubfungov" />
+				<campo origem="codprg" destino="codprg" />
+				<campo origem="codati" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="codsubprjati" destino="codsubprjati" />
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="codddbdsp" destino="codddbdsp" />
+				<campo origem="CLFDSPTCE" destino="clfdsp" />
+				<campo origem="clfdsptce" destino="clfdsptce" />
+				<campo origem="VLROCDDSP" destino="vlrdsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFRCTOCD" destino="TBAFRCTOCD">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="ISNULL(clfrcttce, 0)" destino="clfrct" />
+				<campo origem="CONVERT (date, SYSDATETIME())" destino="datlmt" />
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="subiterct" destino="subiterct" />
+				<campo origem="VLROCDRCT" destino="vlrrct" />
+				<campo origem="ISNULL(VLRATURCT, 0)" destino="vlratu" />
+				<campo origem="codesfocd" destino="codesfocd" />
+				<campo origem="codddbrct" destino="codddbrct" />
+				<campo origem="ISNULL(clfrcttce,0)" destino="clfrcttce" />
+				<campo origem="0" destino="codusr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela destino="TBAFARRRCT">
+				<sql>
+					<![CDATA[
+						SELECT
+						    ISNULL(anoref,0) as anoref,
+						    CODADM,
+						    NUMARR = row_number() OVER (ORDER BY codmov),
+						    NUMSEQ = SEQmov,
+						    TIPMOV,
+						    DATMOV = DATREF,
+						    CODRCT = CODMOV,
+						    (ISNULL((SELECT
+								            clfrcttce
+								        FROM
+								            tbafrctocd
+								        WHERE
+								            codrct = codmov
+								        AND anoref = mov.anoref
+								        AND codadm = mov.codadm),0)
+								        ),
+						    CODCNTCTB = ISNULL(CODCNT,0),
+						    VLRARR =    VLRMOV,
+						    CODEVT = '15.1.001',
+						    ISNULL(codrcs,0) as codrcs,
+						    ISNULL(codsubrcs,0) as codsubrcs,
+						    ISNULL(codsubrcsfte,0) as codsubrcsfte,
+						    ISNULL(codsubrcsftedtl,0) as codsubrcsftedtl,
+						    NUMDOCORI = 0,
+						    ANOREFORI=  ISNULL(anoref,0),
+						    CODHSTPAD = 0,
+						    NUMMOVORI=  isnull(nummov,0),
+						    CODUSR,
+						    ISNULL(datlmt, CONVERT (date, SYSDATETIME())) as datlmt,
+						    TIPDED = isnull((SELECT CASE WHEN ctgrct < 90 THEN 0 ELSE ctgrct  END FROM tbafrctocd where codrct = mov.CODMOV and anoref = mov.anoref and codadm = mov.codadm) ,0)
+						FROM
+						    dbo.TBAFMOVCTB MOV
+					]]>
+				</sql>
+			
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" executarDePara="tbafadmCTB-tbafadmTransparencia" tipo="java.lang.Short"/>
+				<campo origem="numarr" destino="numarr" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="ctbcntrct" destino="ctbcntrct" />
+				<campo origem="CODCNTCTB" destino="CODCNTCTB" />
+				<campo origem="vlrarr" destino="vlrarr" />
+				<campo origem="codevt" destino="codevt" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="numdocori" destino="numdocori" />
+				<campo origem="anorefori" destino="anorefori" />
+				<campo origem="codhstpad" destino="codhstpad" />
+				<campo origem="nummovori" destino="nummovori" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="tipded" destino="tipded" />
+			</sincronizacaoTabela>
+			
+			
+		</sincronizacaoBanco>
+	
+		<sincronizacaoBanco origemId="banco-origem-dbflh" destinoId="banco-destino-transparencia">
+			<sincronizacaoTabela origem="dbo.tbrhpssfix"
+				destino="dbo.tbrhpssfix">
+				<campo origem="mtcFnc" destino="mtcFnc" />
+				<campo origem="nomfnc" destino="nomfnc" />
+				<campo origem="codbco" destino="codbco" />
+				<campo origem="sexfnc" destino="sexfnc" />
+				<campo origem="datnscfnc" destino="datnscfnc" />
+				<campo origem="codlgr" destino="codlgr" />
+				<campo origem="numendfnc" destino="numendfnc" />
+				<campo origem="codbai" destino="codbai" />
+				<campo origem="cplendfnc" destino="cplendfnc" />
+				<campo origem="codage" destino="codage" />
+				<campo origem="codcid" destino="codcid" />
+				<campo origem="sglest" destino="sglest" />
+				<campo origem="cepend" destino="cepend" />
+				<campo origem="digcep" destino="digcep" />
+				<campo origem="tlffnc" destino="tlffnc" />
+				<campo origem="eclfnc" destino="eclfnc" />
+				<campo origem="nacfnc" destino="nacfnc" />
+				<campo origem="codestcvl" destino="codestcvl" />
+				<campo origem="tipadsfnc" destino="tipadsfnc" />
+				<campo origem="numcntfnc" destino="numcntfnc" />
+				<campo origem="numcntfgtsfnc" destino="numcntfgtsfnc" />
+				<campo origem="codhor" destino="codhor" />
+				<campo origem="nompaifnc" destino="nompaifnc" />
+				<campo origem="nomMaeFnc" destino="nomMaeFnc" />
+				<campo origem="datadsfnc" destino="datadsfnc" />
+				<campo origem="datresfnc" destino="datresfnc" />
+				<campo origem="salcttfnc" destino="salcttfnc" />
+				<campo origem="nomcjgfnc" destino="nomcjgfnc" />
+				<campo origem="digcntpssfix" destino="digcntpssfix" />
+				<campo origem="rcafnc" destino="rcafnc" />
+				<campo origem="fncinv" destino="fncinv" />
+				<campo origem="ntrfnc" destino="ntrfnc" />
+				<campo origem="endcrp" destino="endcrp" />
+				<campo origem="numendcrp" destino="numendcrp" />
+				<campo origem="cplendcrp" destino="cplendcrp" />
+				<campo origem="cependcrp" destino="cependcrp" />
+				<campo origem="digcepcrp" destino="digcepcrp" />
+				<campo origem="baiendcrp" destino="baiendcrp" />
+				<campo origem="anochgnac" destino="anochgnac" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbRhPssMns" destino="TbRhPssMns">
+				<campo origem="mtcfnc" destino="mtcfnc" />
+				<campo origem="mesref" destino="mesref" />
+				<campo origem="sitfnc" destino="sitfnc" />
+				<campo origem="codEmp" destino="codEmp" />
+				<campo origem="codFilEmp" destino="codFilEmp" />
+				<campo origem="clffnc" destino="clffnc" />
+				<campo origem="ctgfnc" destino="ctgfnc" />
+				<campo origem="codlcltrb" destino="codlcltrb" />
+				<campo origem="coddspocd" destino="coddspocd" />
+				<campo origem="refsal" destino="refsal" />
+				<campo origem="depsalfml" destino="depsalfml" />
+				<campo origem="depirrf" destino="depirrf" />
+				<campo origem="recirrf" destino="recirrf" />
+				<campo origem="acuirrf" destino="acuirrf" />
+				<campo origem="calprv" destino="calprv" />
+				<campo origem="cal13sal" destino="cal13sal" />
+				<campo origem="grcrais" destino="grcrais" />
+				<campo origem="tpoantfed" destino="tpoantfed" />
+				<campo origem="tpoantest" destino="tpoantest" />
+				<campo origem="tpoantmnc" destino="tpoantmnc" />
+				<campo origem="tpoafa" destino="tpoafa" />
+				<campo origem="tipPgtFnc" destino="tipPgtFnc" />
+				<campo origem="calPnsVtc" destino="calPnsVtc" />
+				<campo origem="calFgts" destino="calFgts" />
+				<campo origem="calSalFam" destino="calSalFam" />
+				<campo origem="codLtc" destino="codLtc" />
+				<campo origem="idxRedSal" destino="idxRedSal" />
+				<campo origem="codOcoSefip" destino="codOcoSefip" />
+				<campo origem="codRcs" destino="codRcs" />
+				<campo origem="codSubRcs" destino="codSubRcs" />
+				<campo origem="ded065Irrf" destino="ded065Irrf" />
+				<campo origem="codhor" destino="codhor" />
+				<campo origem="tipDsp" destino="tipDsp" />
+				<campo origem="codSubRcsFte" destino="codSubRcsFte" />
+				<campo origem="codSubRcsFteDtl" destino="codSubRcsFteDtl" />
+				<campo origem="mleGve" destino="mleGve" />
+				<campo origem="datLauMleGve" destino="datLauMleGve" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbRhPnsVtc" destino="TbRhPnsVtc">
+				<campo origem="mtcfnc" destino="mtcfnc" />
+				<campo origem="seqpnsvtc" destino="seqpnsvtc" />
+				<campo origem="nompnsvtc" destino="nompnsvtc" />
+				<campo origem="codbco" destino="codbco" />
+				<campo origem="datnscpnsvtc" destino="datnscpnsvtc" />
+				<campo origem="datinipnsvtc" destino="datinipnsvtc" />
+				<campo origem="datfimpnsvtc" destino="datfimpnsvtc" />
+				<campo origem="codage" destino="codage" />
+				<campo origem="numcntpnsvtc" destino="numcntpnsvtc" />
+				<campo origem="numcpfpnsvtc" destino="numcpfpnsvtc" />
+				<campo origem="datfimsalfml" destino="datfimsalfml" />
+				<campo origem="perPnsVtc" destino="perPnsVtc" />
+				<campo origem="sexPnsVtc" destino="sexPnsVtc" />
+				<campo origem="digCntPnsVtc" destino="digCntPnsVtc" />
+				<campo origem="MTCFNC" destino="MTCFNC" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="dbo.TbRhCrgFun"
+				destino="dbo.TbRhCrgFun">
+				<campo origem="codfun" destino="codfun" />
+				<campo origem="nomfun" destino="nomfun" />
+				<campo origem="totvag" destino="totvag" />
+				<campo origem="codcbo" destino="codcbo" />
+				<campo origem="leicrivag" destino="leicrivag" />
+				<campo origem="datlei" destino="datlei" />
+				<campo origem="totocp" destino="totocp" />
+				<campo origem="crghormns" destino="crghormns" />
+				<campo origem="tipfun" destino="tipfun" />
+				<campo origem="tabsal" destino="tabsal" />
+				<campo origem="crghorsmn" destino="crghorsmn" />
+				<campo origem="codfunpmc" destino="codfunpmc" />
+				<campo origem="tpopmc" destino="tpopmc" />
+				<campo origem="refsal" destino="refsal" />
+				<campo origem="codcrg" destino="codcrg" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbRhFinBse" destino="TbRhFinBse">
+				<campo origem="mtcFnc" destino="mtcFnc" />
+				<campo origem="mesRef" destino="mesRef" />
+				<campo origem="numSeqPns" destino="numSeqPns" />
+				<campo origem="tipRotCal" destino="tipRotCal" />
+				<campo origem="datPgtFin" destino="datPgtFin" />
+				<campo origem="vlrSalBseFin" destino="vlrSalBseFin" />
+				<campo origem="vlrSalBrtFin" destino="vlrSalBrtFin" />
+				<campo origem="totDscFin" destino="totDscFin" />
+				<campo origem="bseCalPrvFin" destino="bseCalPrvFin" />
+				<campo origem="vlrPrvFin" destino="vlrPrvFin" />
+				<campo origem="bseCalIrrfFin" destino="bseCalIrrfFin" />
+				<campo origem="vlrIrrfFin" destino="vlrIrrfFin" />
+				<campo origem="bseCalFgtsFin" destino="bseCalFgtsFin" />
+				<campo origem="vlrFgtsFin" destino="vlrFgtsFin" />
+				<campo origem="bseSalFmlFin" destino="bseSalFmlFin" />
+				<campo origem="vlrSalFmlFin" destino="vlrSalFmlFin" />
+				<campo origem="fxaIRRF" destino="fxaIRRF" />
+				<campo origem="nomVbaPrv" destino="nomVbaPrv" />
+				<campo origem="codFun" destino="codFun" />
+				<campo origem="refSal" destino="refSal" />
+				<campo origem="tipPrvFin" destino="tipPrvFin" />
+				<campo origem="codVba" destino="codVba" />
+				<campo origem="tipSalFmlFin" destino="tipSalFmlFin" />
+				<campo origem="codVbaPrv" destino="codVbaPrv" />
+				<campo origem="vlrRndTrt" destino="vlrRndTrt" />
+				<campo origem="bseCalPrv13sDsl" destino="bseCalPrv13sDsl" />
+				<campo origem="bseCalIrf13sDsl" destino="bseCalIrf13sDsl" />
+				<campo origem="bseCalPrvFerDsl" destino="bseCalPrvFerDsl" />
+				<campo origem="bseCalIrfFerDsl" destino="bseCalIrfFerDsl" />
+				<campo origem="vlrPvs13Sal" destino="vlrPvs13Sal" />
+				<campo origem="vlrPvsFer" destino="vlrPvsFer" />
+				<campo origem="vlrPvsPrv13Sal" destino="vlrPvsPrv13Sal" />
+				<campo origem="vlrPvsPrvFer" destino="vlrPvsPrvFer" />
+				<campo origem="vlrCalPrv13sDsl" destino="vlrCalPrv13sDsl" />
+				<campo origem="vlrCalIrf13sDsl" destino="vlrCalIrf13sDsl" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="dbo.TbRhSal" destino="dbo.TbRhSal">
+				<campo origem="mesref" destino="mesref" />
+				<campo origem="tabsal" destino="tabsal" />
+				<campo origem="refsal" destino="refsal" />
+				<campo origem="vlrsal" destino="vlrsal" />
+				<campo origem="persal" destino="persal" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="dbo.TBRHVBAINC"
+				destino="dbo.TBRHVBAINC">
+				<campo origem="codVba" destino="codVba" />
+				<campo origem="nomVba" destino="nomVba" />
+				<campo origem="incIrrf" destino="incIrrf" />
+				<campo origem="incPrv" destino="incPrv" />
+				<campo origem="incFgts" destino="incFgts" />
+				<campo origem="incSalFml" destino="incSalFml" />
+				<campo origem="incINSS" destino="incINSS" />
+				<campo origem="calMed" destino="calMed" />
+				<campo origem="tipVbaInc" destino="tipVbaInc" />
+				<campo origem="tipDscEpe" destino="tipDscEpe" />
+				<campo origem="folPgt" destino="folPgt" />
+				<campo origem="fer" destino="fer" />
+				<campo origem="dsl" destino="dsl" />
+				<campo origem="decTcrSal" destino="decTcrSal" />
+				<campo origem="vbaMed" destino="vbaMed" />
+				<campo origem="tipAcm" destino="tipAcm" />
+				<campo origem="qdeMaxVba" destino="qdeMaxVba" />
+				<campo origem="calVbaPopAfa" destino="calVbaPopAfa" />
+				<campo origem="calPrlDiaTrb" destino="calPrlDiaTrb" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="dbo.TBRHFINVBA"
+				destino="dbo.TBRHFINVBA">
+				<campo origem="mtcFnc" destino="mtcFnc" />
+				<campo origem="numSeqPns" destino="numSeqPns" />
+				<campo origem="mesRef" destino="mesRef" />
+				<campo origem="tipRotCal" destino="tipRotCal" />
+				<campo origem="codVba" destino="codVba" />
+				<campo origem="qdeVbaFin" destino="qdeVbaFin" />
+				<campo origem="vlrVbaFin" destino="vlrVbaFin" />
+				<campo origem="datPgtFin" destino="datPgtFin" />
+			</sincronizacaoTabela>
+		</sincronizacaoBanco>
+	
+		<sincronizacaoBanco origemId="banco-origem-dbexc" destinoId="banco-destino-transparencia">
+			<sincronizacaoTabela origem="TBAFADM" destino="TBAFADM">
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="desadm" destino="desadm" />
+				<campo origem="codlgr" destino="codlgr" />
+				<campo origem="cplendadm" destino="cplendadm" />
+				<campo origem="codbai" destino="codbai" />
+				<campo origem="codcid" destino="codcid" />
+				<campo origem="sglest" destino="sglest" />
+				<campo origem="numendadm" destino="numendadm" />
+				<campo origem="cep" destino="cep" />
+				<campo origem="insestadm" destino="insestadm" />
+				<campo origem="tlfadm" destino="tlfadm" />
+				<campo origem="faxadm" destino="faxadm" />
+				<campo origem="cgcadm" destino="cgcadm" />
+				<campo origem="slgadm" destino="slgadm" />
+				<campo origem="flgcld" destino="flgcld" />
+				<campo origem="databertura" destino="databertura" />
+				<campo origem="datfechamento" destino="datfechamento" />
+				<campo origem="codorgtc" destino="codorgtc" />
+				<campo origem="codmuntc" destino="codmuntc" />
+				<campo origem="flgsem" destino="flgsem" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="email" destino="email" />
+				<campo origem="tipadm" destino="tipadm" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFADMPMT" destino="TBAFADMPMT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="pmtordepe" destino="pmtordepe" />
+				<campo origem="pmtemsepe" destino="pmtemsepe" />
+				<campo origem="pmtfrmadm" destino="pmtfrmadm" />
+				<campo origem="pmtcot" destino="pmtcot" />
+				<campo origem="pmtpparct" destino="pmtpparct" />
+				<campo origem="pmtppadsp" destino="pmtppadsp" />
+				<campo origem="pmtppatipprv" destino="pmtppatipprv" />
+				<campo origem="pmtldorct" destino="pmtldorct" />
+				<campo origem="pmtldodsp" destino="pmtldodsp" />
+				<campo origem="pmtepefteunc" destino="pmtepefteunc" />
+				<campo origem="pmttrnfte" destino="pmttrnfte" />
+				<campo origem="pmtorgrct" destino="pmtorgrct" />
+				<campo origem="pmtundrct" destino="pmtundrct" />
+				<campo origem="pmtctgaco" destino="pmtctgaco" />
+				<campo origem="pmtarrpre" destino="pmtarrpre" />
+				<campo origem="pmtpgtdvs" destino="pmtpgtdvs" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="pmtcongst" destino="pmtcongst" />
+				<campo origem="pmtplfinrec" destino="pmtplfinrec" />
+				<campo origem="pmtctabcopgt" destino="pmtctabcopgt" />
+				<campo origem="pmtperrctpgt" destino="pmtperrctpgt" />
+				<campo origem="pmtflgdatprg" destino="pmtflgdatprg" />
+				<campo origem="flgpatri" destino="flgpatri" />
+				<campo origem="flgalmox" destino="flgalmox" />
+				<campo origem="flgpgtonline" destino="flgpgtonline" />
+				<campo origem="perlct" destino="perlct" />
+				<campo origem="vlrlct" destino="vlrlct" />
+				<campo origem="pmtocdfte" destino="pmtocdfte" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFARRRCT" destino="TBAFARRRCT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="numarr" destino="numarr" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="ctbcntrct" destino="ctbcntrct" />
+				<campo origem="vlrarr" destino="vlrarr" />
+				<campo origem="codevt" destino="codevt" />
+				<campo origem="numdocori" destino="numdocori" />
+				<campo origem="anorefori" destino="anorefori" />
+				<campo origem="codhstpad" destino="codhstpad" />
+				<campo origem="nummovori" destino="nummovori" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="tipded" destino="tipded" />
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="codcntctb" destino="codcntctb" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFARRRCTEXT"
+				destino="TBAFARRRCTEXT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="numarr" destino="numarr" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="codcnt" destino="codcnt" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="clfcnt" destino="clfcnt" />
+				<campo origem="vlrarr" destino="vlrarr" />
+				<campo origem="codevt" destino="codevt" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="numdocori" destino="numdocori" />
+				<campo origem="anorefori" destino="anorefori" />
+				<campo origem="codhstpad" destino="codhstpad" />
+				<campo origem="nummovori" destino="nummovori" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codcntctb" destino="codcntctb" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFARRRCTRES"
+				destino="TBAFARRRCTRES">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="numarr" destino="numarr" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="ctbcntrct" destino="ctbcntrct" />
+				<campo origem="codcntctb" destino="codcntctb" />
+				<campo origem="vlrarr" destino="vlrarr" />
+				<campo origem="codevt" destino="codevt" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="numdocori" destino="numdocori" />
+				<campo origem="anorefori" destino="anorefori" />
+				<campo origem="hstmov" destino="hstmov" />
+				<campo origem="nummovori" destino="nummovori" />
+				<campo origem="datarrori" destino="datarrori" />
+				<campo origem="flgsit" destino="flgsit" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFBCOCTB" destino="TBAFBCOCTB">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codcnt" destino="codcnt" />
+				<campo origem="clfcnt" destino="clfcnt" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="codbco" destino="codbco" />
+				<campo origem="codage" destino="codage" />
+				<campo origem="numcnt" destino="numcnt" />
+				<campo origem="dvnumcnt" destino="dvnumcnt" />
+				<campo origem="codcvnbco" destino="codcvnbco" />
+				<campo origem="iduso" destino="iduso" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="tipaplcnt" destino="tipaplcnt" />
+				<campo origem="codtipbco" destino="codtipbco" />
+				<campo origem="CODTIPCNT" destino="CODTIPCNT" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFCADEPE" destino="TBAFCADEPE">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="codmod" destino="codmod" />
+				<campo origem="tipdsp" destino="tipdsp" />
+				<campo origem="ctbcnt" destino="ctbcnt" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="datepe" destino="datepe" />
+				<campo origem="vlrepe" destino="vlrepe" />
+				<campo origem="anolctepe" destino="anolctepe" />
+				<campo origem="lctepe" destino="lctepe" />
+				<campo origem="anoprsepe" destino="anoprsepe" />
+				<campo origem="prsepe" destino="prsepe" />
+				<campo origem="datvncepe" destino="datvncepe" />
+				<campo origem="sldantdsp" destino="sldantdsp" />
+				<campo origem="desepe" destino="desepe" />
+				<campo origem="codobr" destino="codobr" />
+				<campo origem="anoobr" destino="anoobr" />
+				<campo origem="numepecpl" destino="numepecpl" />
+				<campo origem="anoctt" destino="anoctt" />
+				<campo origem="numctt" destino="numctt" />
+				<campo origem="anosvc" destino="anosvc" />
+				<campo origem="tipsvc" destino="tipsvc" />
+				<campo origem="numpot" destino="numpot" />
+				<campo origem="anopot" destino="anopot" />
+				<campo origem="numadt" destino="numadt" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="codcnt" destino="codcnt" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="tipass" destino="tipass" />
+				<campo origem="TIPRGMEXC" destino="TIPRGMEXC" />
+				<campo origem="TIPEPE" destino="TIPEPE" />
+				<campo origem="coddsp" destino="coddsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFCLFMOV" destino="TBAFCLFMOV">
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="desmov" destino="desmov" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESCTBCNT"
+				destino="TBAFDESCTBCNT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codcnt" destino="codcnt" />
+				<campo origem="ctbcnt" destino="ctbcnt" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="tit7cnt" destino="tit7cnt" />
+				<campo origem="tit8cnt" destino="tit8cnt" />
+				<campo origem="tit9cnt" destino="tit9cnt" />
+				<campo origem="tit10cnt" destino="tit10cnt" />
+				<campo origem="tit11cnt" destino="tit11cnt" />
+				<campo origem="nomcnt" destino="nomcnt" />
+				<campo origem="clfcnttce" destino="clfcnttce" />
+				<campo origem="natcnt" destino="natcnt" />
+				<campo origem="nivel" destino="nivel" />
+				<campo origem="cntatv" destino="cntatv" />
+				<campo origem="databr" destino="databr" />
+				<campo origem="datecr" destino="datecr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="subtipcta" destino="subtipcta" />
+				<campo origem="flgsefip" destino="flgsefip" />
+				<campo origem="tiprettcm" destino="tiprettcm" />
+				<campo origem="clfrct" destino="clfrct" />
+				<campo origem="codcntob" destino="codcntob" />
+				<campo origem="tipmovob" destino="tipmovob" />
+				<campo origem="indsupfin" destino="indsupfin" />
+				<campo origem="clfcnt" destino="clfcnt" />
+				<campo origem="TIPENC" destino="TIPENC" />
+				<campo origem="tipcta" destino="tipcta" />
+				<campo origem="TIPCNTCRR" destino="TIPCNTCRR" />
+				<campo origem="codext" destino="codext" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESROT" destino="TBAFDESROT">
+				<campo origem="codrot" destino="codrot" />
+				<campo origem="desrot" destino="desrot" />
+				<campo origem="codmdu" destino="codmdu" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESSIS" destino="TBAFDESSIS">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="dessiscnt" destino="dessiscnt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT1" destino="TBAFDESTIT1">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="destit1" destino="destit1" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT10"
+				destino="TBAFDESTIT10">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="tit7cnt" destino="tit7cnt" />
+				<campo origem="tit8cnt" destino="tit8cnt" />
+				<campo origem="tit9cnt" destino="tit9cnt" />
+				<campo origem="tit10cnt" destino="tit10cnt" />
+				<campo origem="destit10" destino="destit10" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT11"
+				destino="TBAFDESTIT11">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="tit7cnt" destino="tit7cnt" />
+				<campo origem="tit8cnt" destino="tit8cnt" />
+				<campo origem="tit9cnt" destino="tit9cnt" />
+				<campo origem="tit10cnt" destino="tit10cnt" />
+				<campo origem="tit11cnt" destino="tit11cnt" />
+				<campo origem="destit11" destino="destit11" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT2" destino="TBAFDESTIT2">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="destit2" destino="destit2" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT3" destino="TBAFDESTIT3">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="destit3" destino="destit3" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT4" destino="TBAFDESTIT4">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="destit4" destino="destit4" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT5" destino="TBAFDESTIT5">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="destit5" destino="destit5" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT6" destino="TBAFDESTIT6">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="destit6" destino="destit6" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT7" destino="TBAFDESTIT7">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="tit7cnt" destino="tit7cnt" />
+				<campo origem="destit7" destino="destit7" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT8" destino="TBAFDESTIT8">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="tit7cnt" destino="tit7cnt" />
+				<campo origem="tit8cnt" destino="tit8cnt" />
+				<campo origem="destit8" destino="destit8" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDESTIT9" destino="TBAFDESTIT9">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="siscnt" destino="siscnt" />
+				<campo origem="tit1cnt" destino="tit1cnt" />
+				<campo origem="tit2cnt" destino="tit2cnt" />
+				<campo origem="tit3cnt" destino="tit3cnt" />
+				<campo origem="tit4cnt" destino="tit4cnt" />
+				<campo origem="tit5cnt" destino="tit5cnt" />
+				<campo origem="tit6cnt" destino="tit6cnt" />
+				<campo origem="tit7cnt" destino="tit7cnt" />
+				<campo origem="tit8cnt" destino="tit8cnt" />
+				<campo origem="tit9cnt" destino="tit9cnt" />
+				<campo origem="destit9" destino="destit9" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDSPEXT" destino="TBAFDSPEXT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="numext" destino="numext" />
+				<campo origem="anoext" destino="anoext" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codevt" destino="codevt" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="datems" destino="datems" />
+				<campo origem="vlrext" destino="vlrext" />
+				<campo origem="datvnc" destino="datvnc" />
+				<campo origem="datprgpgt" destino="datprgpgt" />
+				<campo origem="datpgoext" destino="datpgoext" />
+				<campo origem="anoprspgo" destino="anoprspgo" />
+				<campo origem="numprspgo" destino="numprspgo" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codcntdbt" destino="codcntdbt" />
+				<campo origem="codcntcrd" destino="codcntcrd" />
+				<campo origem="codhst" destino="codhst" />
+				<campo origem="hstext1" destino="hstext1" />
+				<campo origem="hstext2" destino="hstext2" />
+				<campo origem="tiprotcal" destino="tiprotcal" />
+				<campo origem="flgflh" destino="flgflh" />
+				<campo origem="codfte" destino="codfte" />
+				<campo origem="tiplmtext" destino="tiplmtext" />
+				<campo origem="subtipcta" destino="subtipcta" />
+				<campo origem="ddbsubtipcta" destino="ddbsubtipcta" />
+				<campo origem="tipdsp" destino="tipdsp" />
+				<campo origem="numpot" destino="numpot" />
+				<campo origem="anopot" destino="anopot" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFDSPOCD" destino="TBAFDSPOCD">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="coddspocd" destino="coddspocd" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="codsubfungov" destino="codsubfungov" />
+				<campo origem="codprg" destino="codprg" />
+				<campo origem="codtipaco" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="codsubprjati" destino="codsubprjati" />
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="codddbdsp" destino="codddbdsp" />
+				<campo origem="clfdsp" destino="clfdsp" />
+				<campo origem="clfdsptce" destino="clfdsptce" />
+				<campo origem="ctbcnt" destino="ctbcnt" />
+				<campo origem="vlrdsp" destino="vlrdsp" />
+				<campo origem="codesfocd" destino="codesfocd" />
+				<campo origem="codtipcrd" destino="codtipcrd" />
+				<campo origem="codredaco" destino="codredaco" />
+				<campo origem="flgrespri" destino="flgrespri" />
+				<campo origem="codtiplei" destino="codtiplei" />
+				<campo origem="codlei" destino="codlei" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFEVT" destino="TBAFEVT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codevt" destino="codevt" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipadm" destino="tipadm" />
+				<campo origem="desevt" destino="desevt" />
+				<campo origem="desrdcevt" destino="desrdcevt" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="TIPLMTCNT" destino="TIPLMTCNT" />
+				<campo origem="TIPFLXMOV" destino="TIPFLXMOV" />
+				<campo origem="CODROT" destino="CODROT" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFFLUCXA" destino="TBAFFLUCXA">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="dataref" destino="dataref" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="clfgrp" destino="clfgrp" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="codtipnat" destino="codtipnat" />
+				<campo origem="vlrflucxa" destino="vlrflucxa" />
+				<campo origem="vlrprv" destino="vlrprv" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="TIPFLXMOV" destino="TIPFLXMOV" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFGRPCNT" destino="TBAFGRPCNT">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codtip" destino="codtip" />
+				<campo origem="codgrp" destino="codgrp" />
+				<campo origem="desgrp" destino="desgrp" />
+				<campo origem="nivel" destino="nivel" />
+				<campo origem="tamfrm" destino="tamfrm" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFMOVEPE" destino="TBAFMOVEPE">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="seqmov" destino="seqmov" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="nummov" destino="nummov" />
+				<campo origem="numdoc" destino="numdoc" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="vlrmov" destino="vlrmov" />
+				<campo origem="datprgpgt" destino="datprgpgt" />
+				<campo origem="sldftercs" destino="sldftercs" />
+				<campo origem="sldtot" destino="sldtot" />
+				<campo origem="sldepe" destino="sldepe" />
+				<campo origem="codhstpad" destino="codhstpad" />
+				<campo origem="hstepe" destino="hstepe" />
+				<campo origem="anoprspgo" destino="anoprspgo" />
+				<campo origem="numprspgo" destino="numprspgo" />
+				<campo origem="vlranuepectt" destino="vlranuepectt" />
+				<campo origem="tippes" destino="tippes" />
+				<campo origem="codpesrpn" destino="codpesrpn" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="hramov" destino="hramov" />
+				<campo origem="codevt" destino="codevt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFMOVEPERST"
+				destino="TBAFMOVEPERST">
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="anorst" destino="anorst" />
+				<campo origem="ctbcnt" destino="ctbcnt" />
+				<campo origem="numseq" destino="numseq" />
+				<campo origem="tipmov" destino="tipmov" />
+				<campo origem="cntrstcrd" destino="cntrstcrd" />
+				<campo origem="datmov" destino="datmov" />
+				<campo origem="nummov" destino="nummov" />
+				<campo origem="vlrmov" destino="vlrmov" />
+				<campo origem="numdoc" destino="numdoc" />
+				<campo origem="hstmov" destino="hstmov" />
+				<campo origem="datprgpgt" destino="datprgpgt" />
+				<campo origem="anoprspgo" destino="anoprspgo" />
+				<campo origem="numprspgo" destino="numprspgo" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="vlrepeorifte" destino="vlrepeorifte" />
+				<campo origem="codevt" destino="codevt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFRCTCNTVCL"
+				destino="TBAFRCTCNTVCL">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="vlrvcl" destino="vlrvcl" />
+				<campo origem="vlratu" destino="vlratu" />
+				<campo origem="perrcs" destino="perrcs" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFRCTOCD" destino="TBAFRCTOCD">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="clfrct" destino="clfrct" />
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="subiterct" destino="subiterct" />
+				<campo origem="vlrrct" destino="vlrrct" />
+				<campo origem="vlratu" destino="vlratu" />
+				<campo origem="codesfocd" destino="codesfocd" />
+				<campo origem="codddbrct" destino="codddbrct" />
+				<campo origem="flgrespri" destino="flgrespri" />
+				<campo origem="codtipproc" destino="codtipproc" />
+				<campo origem="codtiplei" destino="codtiplei" />
+				<campo origem="codlei" destino="codlei" />
+				<campo origem="desleg" destino="desleg" />
+				<campo origem="tipded" destino="tipded" />
+				<campo origem="clfrcttce" destino="clfrcttce" />
+				<campo origem="clfcnt" destino="clfcnt" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+				<campo origem="pasep" destino="pasep" />
+				<campo origem="cod25" destino="cod25" />
+				<campo origem="cod15" destino="cod15" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFRLZDSPOCD"
+				destino="TBAFRLZDSPOCD">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="coddspocd" destino="coddspocd" />
+				<campo origem="mesref" destino="mesref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="vlrepedsp" destino="vlrepedsp" />
+				<campo origem="vlranudsp" destino="vlranudsp" />
+				<campo origem="vlrliqdsp" destino="vlrliqdsp" />
+				<campo origem="vlrpgodsp" destino="vlrpgodsp" />
+				<campo origem="vlrspmdsp" destino="vlrspmdsp" />
+				<campo origem="vlrrdcdsp" destino="vlrrdcdsp" />
+				<campo origem="vlrpcldsp" destino="vlrpcldsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFRLZRCTOCD"
+				destino="TBAFRLZRCTOCD">
+				<campo origem="codrct" destino="codrct" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="mesref" destino="mesref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="vlrarrrct" destino="vlrarrrct" />
+				<campo origem="vlraturct" destino="vlraturct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFRSTPGO" destino="TBAFRSTPGO">
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="numepe" destino="numepe" />
+				<campo origem="pclepe" destino="pclepe" />
+				<campo origem="anorst" destino="anorst" />
+				<campo origem="ctbcnt" destino="ctbcnt" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="vlrepe" destino="vlrepe" />
+				<campo origem="datepe" destino="datepe" />
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="codsubfungov" destino="codsubfungov" />
+				<campo origem="codprg" destino="codprg" />
+				<campo origem="codtipaco" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubprjati" destino="codsubprjati" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="codddbdsp" destino="codddbdsp" />
+				<campo origem="codvcl" destino="codvcl" />
+				<campo origem="codprc" destino="codprc" />
+				<campo origem="datliq" destino="datliq" />
+				<campo origem="vlrepeori" destino="vlrepeori" />
+				<campo origem="anosvc" destino="anosvc" />
+				<campo origem="tipsvc" destino="tipsvc" />
+				<campo origem="tipdsp" destino="tipdsp" />
+				<campo origem="tiprgmexc" destino="tiprgmexc" />
+				<campo origem="datlmt" destino="datlmt" />
+				<campo origem="codusr" destino="codusr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFTIPCNT" destino="TBAFTIPCNT">
+				<campo origem="codtipcnt" destino="codtipcnt" />
+				<campo origem="descnt" destino="descnt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFTIPCNTBCO"
+				destino="TBAFTIPCNTBCO">
+				<campo origem="codtipbco" destino="codtipbco" />
+				<campo origem="destipbco" destino="destipbco" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFTIPEPE" destino="TBAFTIPEPE">
+				<campo origem="tipepe" destino="tipepe" />
+				<campo origem="destipepe" destino="destipepe" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFTIPFLXMOV"
+				destino="TBAFTIPFLXMOV">
+				<campo origem="tipflxmov" destino="tipflxmov" />
+				<campo origem="desflxmov" destino="desflxmov" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBAFTIPLMTCNT"
+				destino="TBAFTIPLMTCNT">
+				<campo origem="tiplmtcnt" destino="tiplmtcnt" />
+				<campo origem="deslmtcnt" destino="deslmtcnt" />
+				<campo origem="funlmtcnt" destino="funlmtcnt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBTIPADM" destino="TBTIPADM">
+				<campo origem="tipadm" destino="tipadm" />
+				<campo origem="destipadm" destino="destipadm" />
+				<campo origem="tipadmtc" destino="tipadmtc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBTIPRGMEXC" destino="TBTIPRGMEXC">
+				<campo origem="tiprgmexc" destino="tiprgmexc" />
+				<campo origem="desrgmexc" destino="desrgmexc" />
+				<campo origem="tiprgmexctc" destino="tiprgmexctc" />
+			</sincronizacaoTabela>
+		</sincronizacaoBanco>
+	
+		<sincronizacaoBanco origemId="banco-origem-dbgrl" destinoId="banco-destino-transparencia">
+			<sincronizacaoTabela origem="TbBai" destino="TbBai">
+				<campo origem="codbai" destino="codbai" />
+				<campo origem="nombai" destino="nombai" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBCID" destino="TBCID">
+				<campo origem="codcid" destino="codcid" />
+				<campo origem="nomcid" destino="nomcid" />
+				<campo origem="codSicom" destino="codSicom" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbEmp" destino="TbEmp">
+				<campo origem="codEmp" destino="codEmp" />
+				<campo origem="nomEmp" destino="nomEmp" />
+				<campo origem="numEndEmp" destino="numEndEmp" />
+				<campo origem="cplEndEmp" destino="cplEndEmp" />
+				<campo origem="cep" destino="cep" />
+				<campo origem="tlfEmp" destino="tlfEmp" />
+				<campo origem="faxEmp" destino="faxEmp" />
+				<campo origem="cgcEmp" destino="cgcEmp" />
+				<campo origem="insEstEmp" destino="insEstEmp" />
+				<campo origem="rpnEmp" destino="rpnEmp" />
+				<campo origem="tipRpnEmp" destino="tipRpnEmp" />
+				<campo origem="nomCtoEmp1" destino="nomCtoEmp1" />
+				<campo origem="crgCtoEmp1" destino="crgCtoEmp1" />
+				<campo origem="nomCtoEmp2" destino="nomCtoEmp2" />
+				<campo origem="crgCtoEmp2" destino="crgCtoEmp2" />
+				<campo origem="nomEmpRep" destino="nomEmpRep" />
+				<campo origem="imgbrs" destino="imgbrs" />
+				<campo origem="imgmrcagu" destino="imgmrcagu" />
+				<campo origem="codAdmCtb" destino="codAdmCtb" />
+				<campo origem="pswCtb" destino="pswCtb" />
+				<campo origem="ctbNov" destino="ctbNov" />
+				<campo origem="anoCtbNov" destino="anoCtbNov" />
+				<campo origem="CodLgr" destino="CODLGR" />
+				<campo origem="SGLEST" destino="SGLEST" />
+				<campo origem="CODCID" destino="CODCID" />
+				<campo origem="CODBAI" destino="CODBAI" />
+				<campo origem="CodAdm" destino="CodAdm" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBEST" destino="TBEST">
+				<campo origem="sglest" destino="sglest" />
+				<campo origem="nomest" destino="nomest" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBFRN" destino="TBFRN">
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="nomfrn" destino="nomfrn" />
+				<campo origem="cplend" destino="cplend" />
+				<campo origem="numend" destino="numend" />
+				<campo origem="cep" destino="cep" />
+				<campo origem="numtlf1" destino="numtlf1" />
+				<campo origem="numtlf2" destino="numtlf2" />
+				<campo origem="numfax" destino="numfax" />
+				<campo origem="nomcto" destino="nomcto" />
+				<campo origem="tipfrn" destino="tipfrn" />
+				<campo origem="cgc" destino="cgc" />
+				<campo origem="cpf" destino="cpf" />
+				<campo origem="insest" destino="insest" />
+				<campo origem="nomFnt" destino="nomFnt" />
+				<campo origem="eml" destino="eml" />
+				<campo origem="endWww" destino="endWww" />
+				<campo origem="obsFrn" destino="obsFrn" />
+				<campo origem="tipEmp" destino="tipEmp" />
+				<campo origem="rg" destino="rg" />
+				<campo origem="insmun" destino="insmun" />
+				<campo origem="nroCei" destino="nroCei" />
+				<campo origem="nroPis" destino="nroPis" />
+				<campo origem="nroCbo" destino="nroCbo" />
+				<campo origem="ctgTrb" destino="ctgTrb" />
+				<campo origem="nroOco" destino="nroOco" />
+				<campo origem="flgGFIP" destino="flgGFIP" />
+				<campo origem="flgDIRF" destino="flgDIRF" />
+				<campo origem="datCadPrf" destino="datCadPrf" />
+				<campo origem="frnatv" destino="frnatv" />
+				<campo origem="me" destino="me" />
+				<campo origem="nrodocest" destino="nrodocest" />
+				<campo origem="slgEstInsEst" destino="slgEstInsEst" />
+				<campo origem="objetoSocial" destino="objetoSocial" />
+				<campo origem="nroCNDT" destino="nroCNDT" />
+				<campo origem="datCNDT" destino="datCNDT" />
+				<campo origem="orgReg" destino="orgReg" />
+				<campo origem="nroReg" destino="nroReg" />
+				<campo origem="datReg" destino="datReg" />
+				<campo origem="nroCVM" destino="nroCVM" />
+				<campo origem="datCVM" destino="datCVM" />
+				<campo origem="CodLgr" destino="CODLGR" />
+				<campo origem="SGLEST" destino="SGLEST" />
+				<campo origem="CODCID" destino="CODCID" />
+				<campo origem="CODBAI" destino="CODBAI" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbLgr" destino="TbLgr">
+				<campo origem="codLgr" destino="codLgr" />
+				<campo origem="desLgr" destino="desLgr" />
+				<campo origem="CodTipLgr" destino="CodTipLgr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbTipLgr" destino="TbTipLgr">
+				<campo origem="codTipLgr" destino="codTipLgr" />
+				<campo origem="desTipLgr" destino="desTipLgr" />
+				<campo origem="abvTipLgr" destino="abvTipLgr" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBELEECO" destino="TBSUBELEECO">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubeleeco" destino="dessubeleeco" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBPRJATI" destino="TBPRJATI">
+				<campo origem="CODATI" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desprjati" destino="desprjati" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBUNDOCD" destino="TBUNDOCD">
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="nomund" destino="nomund" />
+				<campo origem="funund" destino="funund" />
+				<campo origem="codundtc" destino="codundtc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBFUNGOV" destino="TBFUNGOV">
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desfungov" destino="desfungov" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBITERCT" destino="TBSUBITERCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="subiterct" destino="subiterct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubiterct" destino="dessubiterct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBITERCT" destino="TBITERCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desiterct" destino="desiterct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBALNRCT" destino="TBSUBALNRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubalnrct" destino="dessubalnrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBALNRCT" destino="TBALNRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desalnrct" destino="desalnrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBRUBRCT" destino="TBRUBRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desrubrct" destino="desrubrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBFTERCT" destino="TBFTERCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desfte" destino="desfte" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBCTGRCT" destino="TBSUBCTGRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubctgrct" destino="dessubctgrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBCTGRCT" destino="TBCTGRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desctgrct" destino="desctgrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBORGGOV" destino="TBORGGOV">
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="nomorg" destino="nomorg" />
+				<campo origem="funorg" destino="funorg" />
+			</sincronizacaoTabela>
+		</sincronizacaoBanco>
+	
+		<sincronizacaoBanco origemId="banco-origem-dbpln" destinoId="banco-destino-transparencia">
+			<sincronizacaoTabela origem="TBALNRCT" destino="TBALNRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desalnrct" destino="desalnrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBCTGECO" destino="TBCTGECO">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desctgeco" destino="desctgeco" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBCTGRCT" destino="TBCTGRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desctgrct" destino="desctgrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBDDBDSP" destino="TBDDBDSP">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="codddbdsp" destino="codddbdsp" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desddbdsp" destino="desddbdsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBDDBRCT" destino="TBDDBRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="subiterct" destino="subiterct" />
+				<campo origem="codddbrct" destino="codddbrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desddbrct" destino="desddbrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBELEECO" destino="TBELEECO">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="deseleeco" destino="deseleeco" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBFTERCT" destino="TBFTERCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desfte" destino="desfte" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBFUNGOV" destino="TBFUNGOV">
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desfungov" destino="desfungov" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBITEDSP" destino="TBITEDSP">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desitedsp" destino="desitedsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBITERCT" destino="TBITERCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desiterct" destino="desiterct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBORGGOV" destino="TBORGGOV">
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="nomorg" destino="nomorg" />
+				<campo origem="funorg" destino="funorg" />
+				<campo origem="codorgtc" destino="codorgtc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBPPPRG" destino="TBPPPRG">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codprg" destino="codprg" />
+				<campo origem="desprg" destino="desprg" />
+				<campo origem="codmacobj" destino="codmacobj" />
+				<campo origem="tippes" destino="tippes" />
+				<campo origem="codpesrpn" destino="codpesrpn" />
+				<campo origem="objprg" destino="objprg" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBPPTIPACO" destino="TBPPTIPACO">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codtipaco" destino="codtipaco" />
+				<campo origem="destipaco" destino="destipaco" />
+				<campo origem="codtipacotc" destino="codtipacotc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBPRJATI" destino="TBPRJATI">
+				<campo origem="codtipaco" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desprjati" destino="desprjati" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBRCSELB" destino="TBRCSELB">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="desrcs" destino="desrcs" />
+				<campo origem="codrcstc" destino="codrcstc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBRUBRCT" destino="TBRUBRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="desrubrct" destino="desrubrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBALNRCT" destino="TBSUBALNRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubalnrct" destino="dessubalnrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBCTGECO" destino="TBSUBCTGECO">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubctgeco" destino="dessubctgeco" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBCTGRCT" destino="TBSUBCTGRCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubctgrct" destino="dessubctgrct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBELEECO" destino="TBSUBELEECO">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubeleeco" destino="dessubeleeco" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBFUNGOV" destino="TBSUBFUNGOV">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codsubfungov" destino="codsubfungov" />
+				<campo origem="codfungov" destino="codfungov" />
+				<campo origem="dessubfungov" destino="dessubfungov" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBITEDSP" destino="TBSUBITEDSP">
+				<campo origem="codctgeco" destino="codctgeco" />
+				<campo origem="codsubctgeco" destino="codsubctgeco" />
+				<campo origem="codeleeco" destino="codeleeco" />
+				<campo origem="codsubeleeco" destino="codsubeleeco" />
+				<campo origem="coditedsp" destino="coditedsp" />
+				<campo origem="codsubitedsp" destino="codsubitedsp" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubitedsp" destino="dessubitedsp" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBITERCT" destino="TBSUBITERCT">
+				<campo origem="ctgrct" destino="ctgrct" />
+				<campo origem="subctgrct" destino="subctgrct" />
+				<campo origem="fterct" destino="fterct" />
+				<campo origem="rubrct" destino="rubrct" />
+				<campo origem="alnrct" destino="alnrct" />
+				<campo origem="subalnrct" destino="subalnrct" />
+				<campo origem="iterct" destino="iterct" />
+				<campo origem="subiterct" destino="subiterct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="dessubiterct" destino="dessubiterct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBPRJATI" destino="TBSUBPRJATI">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codtipaco" destino="codtipaco" />
+				<campo origem="codprjati" destino="codprjati" />
+				<campo origem="codsubprjati" destino="codsubprjati" />
+				<campo origem="dessubprjati" destino="dessubprjati" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBRCSELB" destino="TBSUBRCSELB">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="dessubrcs" destino="dessubrcs" />
+				<campo origem="codsubrcstc" destino="codsubrcstc" />
+				<campo origem="codtipvnc" destino="codtipvnc" />
+				<campo origem="iduso" destino="iduso" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBRCSFTEDTLELB"
+				destino="TBSUBRCSFTEDTLELB">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="codsubrcsftedtl" destino="codsubrcsftedtl" />
+				<campo origem="dessubrcsftedtl" destino="dessubrcsftedtl" />
+				<campo origem="codsubrcsftedtltc" destino="codsubrcsftedtltc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBRCSFTEELB"
+				destino="TBSUBRCSFTEELB">
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codrcs" destino="codrcs" />
+				<campo origem="codsubrcs" destino="codsubrcs" />
+				<campo origem="codsubrcsfte" destino="codsubrcsfte" />
+				<campo origem="dessubrcsfte" destino="dessubrcsfte" />
+				<campo origem="codsubrcsftetc" destino="codsubrcsftetc" />
+				<campo origem="flgfix" destino="flgfix" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSUBUNDOCD" destino="TBSUBUNDOCD">
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="codsubundocd" destino="codsubundocd" />
+				<campo origem="dessubundocd" destino="dessubundocd" />
+				<campo origem="funsubundocd" destino="funsubundocd" />
+				<campo origem="codsubundocdtc" destino="codsubundocdtc" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBUNDOCD" destino="TBUNDOCD">
+				<campo origem="codorg" destino="codorg" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codund" destino="codund" />
+				<campo origem="nomund" destino="nomund" />
+				<campo origem="funund" destino="funund" />
+				<campo origem="codundtc" destino="codundtc" />
+			</sincronizacaoTabela>
+		</sincronizacaoBanco>
+	
+		<sincronizacaoBanco origemId="banco-origem-dbsge" destinoId="banco-destino-transparencia">
+			<sincronizacaoTabela origem="dbo.tbsglct" destino="dbo.tbsglct">
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codlct" destino="codlct" />
+				<campo origem="anolct" destino="anolct" />
+				<campo origem="datlct" destino="datlct" />
+				<campo origem="codcrtjlg" destino="codcrtjlg" />
+				<campo origem="hraabr" destino="hraabr" />
+				<campo origem="databr" destino="databr" />
+				<campo origem="datenr" destino="datenr" />
+				<campo origem="hraenr" destino="hraenr" />
+				<campo origem="digeqc" destino="digeqc" />
+				<campo origem="codeqc" destino="codeqc" />
+				<campo origem="hranvojlg" destino="hranvojlg" />
+				<campo origem="datnvojlg" destino="datnvojlg" />
+				<campo origem="tiplct" destino="tiplct" />
+				<campo origem="datpubedt" destino="datpubedt" />
+				<campo origem="vlredt" destino="vlredt" />
+				<campo origem="nroprslct" destino="nroprslct" />
+				<campo origem="nroatapga" destino="nroatapga" />
+				<campo origem="anoatapga" destino="anoatapga" />
+				<campo origem="flgdsc" destino="flgdsc" />
+				<campo origem="nroprotocolo" destino="nroprotocolo" />
+				<campo origem="codmodlei" destino="codmodlei" />
+				<campo origem="codnatproced" destino="codnatproced" />
+				<campo origem="codnatobj" destino="codnatobj" />
+				<campo origem="codregexe" destino="codregexe" />
+				<campo origem="codcndpgt" destino="codcndpgt" />
+				<campo origem="codorgrsp" destino="codorgrsp" />
+				<campo origem="anoprotocolo" destino="anoprotocolo" />
+				<campo origem="codmod" destino="codmod" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="DBO.tbsgsacsctt"
+				destino="DBO.tbsgsacsctt">
+				<campo origem="codctt" destino="codctt" />
+				<campo origem="nroctt" destino="nroctt" />
+				<campo origem="anoctt" destino="anoctt" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoreflct" destino="anoreflct" />
+				<campo origem="datass" destino="datass" />
+				<campo origem="datpub" destino="datpub" />
+				<campo origem="veicdiv" destino="veicdiv" />
+				<campo origem="datinivgc" destino="datinivgc" />
+				<campo origem="datvncctt" destino="datvncctt" />
+				<campo origem="datvncatu" destino="datvncatu" />
+				<campo origem="codrep" destino="codrep" />
+				<campo origem="natobjtctt" destino="natobjtctt" />
+				<campo origem="objctt" destino="objctt" />
+				<campo origem="tipctt" destino="tipctt" />
+				<campo origem="vlrtotctt" destino="vlrtotctt" />
+				<campo origem="vlrexectt" destino="vlrexectt" />
+				<campo origem="vlratuctt" destino="vlratuctt" />
+				<campo origem="formafornecimento" destino="formafornecimento" />
+				<campo origem="formapagamento" destino="formapagamento" />
+				<campo origem="prazoexecucao" destino="prazoexecucao" />
+				<campo origem="multarecisao" destino="multarecisao" />
+				<campo origem="multainadimplemento" destino="multainadimplemento" />
+				<campo origem="garantia" destino="garantia" />
+				<campo origem="codsignatario" destino="codsignatario" />
+				<campo origem="sitctt" destino="sitctt" />
+				<campo origem="codcsc" destino="codcsc" />
+				<campo origem="anocsc" destino="anocsc" />
+				<campo origem="nomarq" destino="nomarq" />
+				<campo origem="observacaosit" destino="observacaosit" />
+				<campo origem="datalt" destino="datalt" />
+				<campo origem="usralt" destino="usralt" />
+				<campo origem="datgrv" destino="datgrv" />
+				<campo origem="usrgrv" destino="usrgrv" />
+				<campo origem="tipexecucao" destino="tipexecucao" />
+				<campo origem="qdeprazoexec" destino="qdeprazoexec" />
+				<campo origem="desprazoexec" destino="desprazoexec" />
+				<campo origem="tipocttite" destino="tipocttite" />
+				<campo origem="orgaogestor" destino="orgaogestor" />
+				<campo origem="anoorgaogestor" destino="anoorgaogestor" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="dbo.tbsgmodlct"
+				destino="dbo.tbsgmodlct">
+				<campo origem="codmod" destino="codmod" />
+				<campo origem="desmod" destino="desmod" />
+				<campo origem="lmtdia" destino="lmtdia" />
+				<campo origem="modlei" destino="modlei" />
+				<campo origem="modstn" destino="modstn" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="dbo.TBSGFSEPRS"
+				destino="dbo.TBSGFSEPRS">
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codadm" destino="codadm" />
+				<campo origem="codfse" destino="codfse" />
+				<campo origem="datfse" destino="datfse" />
+				<campo origem="datfseatu" destino="datfseatu" />
+				<campo origem="nroprotocolo" destino="nroprotocolo" />
+				<campo origem="anoprotocolo" destino="anoprotocolo" />
+				<campo origem="descricaofase" destino="descricaofase" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgObjLct" destino="TbSgObjLct">
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoRef" destino="anoRef" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="desObjLct1" destino="desObjLct1" />
+				<campo origem="desObjLct2" destino="desObjLct2" />
+				<campo origem="desObjLct3" destino="desObjLct3" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgMapLct" destino="TbSgMapLct">
+				<campo origem="numseqite" destino="numseqite" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="codpcp" destino="codpcp" />
+				<campo origem="anorefpcp" destino="anorefpcp" />
+				<campo origem="tippcp" destino="tippcp" />
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="tipmap" destino="tipmap" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="vlr" destino="vlr" />
+				<campo origem="przent" destino="przent" />
+				<campo origem="dspfrn" destino="dspfrn" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="datMapLct" destino="datMapLct" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+				<campo origem="numlote" destino="numlote" />
+				<campo origem="desconto" destino="desconto" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgMovPcp" destino="TbSgMovPcp">
+				<campo origem="codpcp" destino="codpcp" />
+				<campo origem="anorefpcp" destino="anorefpcp" />
+				<campo origem="tippcp" destino="tippcp" />
+				<campo origem="numseqmtl" destino="numseqmtl" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="coddspocd" destino="coddspocd" />
+				<campo origem="qde" destino="qde" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="vlrmtl" destino="vlrmtl" />
+				<campo origem="codacscan" destino="codacscan" />
+				<campo origem="anorefacscan" destino="anorefacscan" />
+				<campo origem="codDspOcdAnoAnt" destino="codDspOcdAnoAnt" />
+				<campo origem="anoRefAnoAnt" destino="anoRefAnoAnt" />
+				<campo origem="codCnv" destino="codCnv" />
+				<campo origem="qdeCnv" destino="qdeCnv" />
+				<campo origem="codRcs" destino="codRcs" />
+				<campo origem="codSubRcs" destino="codSubRcs" />
+				<campo origem="flgArz" destino="flgArz" />
+				<campo origem="nivArz" destino="nivArz" />
+				<campo origem="codSubRcsFte" destino="codSubRcsFte" />
+				<campo origem="codSubRcsFteDtl" destino="codSubRcsFteDtl" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgPcpLct" destino="TbSgPcpLct">
+				<campo origem="codpcp" destino="codpcp" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="anorefpcp" destino="anorefpcp" />
+				<campo origem="tippcp" destino="tippcp" />
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoRef" destino="anoRef" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSGCRTJLG" destino="TBSGCRTJLG">
+				<campo origem="codCrtJlg" destino="codCrtJlg" />
+				<campo origem="desCrtJlg" destino="desCrtJlg" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSGCNDPGT" destino="TBSGCNDPGT">
+				<campo origem="codCndPgt" destino="codCndPgt" />
+				<campo origem="desCndPgt" destino="desCndPgt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSGDSCPRZLCT"
+				destino="TBSGDSCPRZLCT">
+				<campo origem="prsLct" destino="prsLct" />
+				<campo origem="anoRef" destino="anoRef" />
+				<campo origem="codFrn" destino="codFrn" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="codCndPgt" destino="codCndPgt" />
+				<campo origem="vlrDsc" destino="vlrDsc" />
+				<campo origem="vldPps" destino="vldPps" />
+				<campo origem="przEnt" destino="przEnt" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbsgPrsLctDspOcd"
+				destino="TbsgPrsLctDspOcd">
+				<campo origem="prsLct" destino="prsLct" />
+				<campo origem="anoRef" destino="anoRef" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="codDspOcd" destino="codDspOcd" />
+				<campo origem="anoRefDspOcd" destino="anoRefDspOcd" />
+				<campo origem="codAdmDsp" destino="codAdmDsp" />
+				<campo origem="codCenCst" destino="codCenCst" />
+				<campo origem="anoRefCenCst" destino="anoRefCenCst" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+				<campo origem="valorPrevisto" destino="valorPrevisto" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgFrnLct" destino="TbSgFrnLct">
+				<campo origem="prsLct" destino="prsLct" />
+				<campo origem="anoRef" destino="anoRef" />
+				<campo origem="codFrn" destino="codFrn" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="vlrPpsTcn" destino="vlrPpsTcn" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSGHOM" destino="TBSGHOM">
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="prslct" destino="prslct" />
+				<campo origem="anoRef" destino="anoRef" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="numlote" destino="numlote" />
+				<campo origem="codRdcMtl" destino="codRdcMtl" />
+				<campo origem="vlrHom" destino="vlrHom" />
+				<campo origem="datHom" destino="datHom" />
+				<campo origem="usrAlt" destino="usrAlt" />
+				<campo origem="datAlt" destino="datAlt" />
+				<campo origem="usrgrv" destino="usrgrv" />
+				<campo origem="datGrv" destino="datGrv" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+				<campo origem="tipHom" destino="tipHom" />
+				<campo origem="qdeHom" destino="qdeHom" />
+				<campo origem="vlrUni" destino="vlrUni" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgMtl" destino="TbSgMtl">
+				<campo origem="codRdcMtl" destino="codRdcMtl" />
+				<campo origem="codseq" destino="codseq" />
+				<campo origem="nomrdc" destino="nomrdc" />
+				<campo origem="itepcv" destino="itepcv" />
+				<campo origem="vlrite" destino="vlrite" />
+				<campo origem="vlrmaxite" destino="vlrmaxite" />
+				<campo origem="vlrmnmite" destino="vlrmnmite" />
+				<campo origem="etqmax" destino="etqmax" />
+				<campo origem="etqmed" destino="etqmed" />
+				<campo origem="etqmin" destino="etqmin" />
+				<campo origem="datultcmp" destino="datultcmp" />
+				<campo origem="vlrmedite" destino="vlrmedite" />
+				<campo origem="tipMtl" destino="tipMtl" />
+				<campo origem="ptoRps" destino="ptoRps" />
+				<campo origem="flgAtv" destino="flgAtv" />
+				<campo origem="datCad" destino="datCad" />
+				<campo origem="datAlt" destino="datAlt" />
+				<campo origem="obsAlt" destino="obsAlt" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TbSgAdj" destino="TbSgAdj">
+				<campo origem="prclct" destino="prclct" />
+				<campo origem="anoref" destino="anoref" />
+				<campo origem="codfrn" destino="codfrn" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="datadj" destino="datadj" />
+				<campo origem="nomArq" destino="nomArq" />
+				<campo origem="nroProtocolo" destino="nroProtocolo" />
+				<campo origem="anoProtocolo" destino="anoProtocolo" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSGCENCSTLCT"
+				destino="TBSGCENCSTLCT">
+				<campo origem="codCenCst" destino="codCenCst" />
+				<campo origem="anoRefCenCst" destino="anoRefCenCst" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="nomCenCst" destino="nomCenCst" />
+				<campo origem="rspLct" destino="rspLct" />
+			</sincronizacaoTabela>
+			<sincronizacaoTabela origem="TBSGSACSITECTT"
+				destino="TBSGSACSITECTT">
+				<campo origem="codCtt" destino="codCtt" />
+				<campo origem="nroCtt" destino="nroCtt" />
+				<campo origem="anoCtt" destino="anoCtt" />
+				<campo origem="codAdm" destino="codAdm" />
+				<campo origem="codRdcMtl" destino="codRdcMtl" />
+				<campo origem="numlote" destino="numlote" />
+				<campo origem="qdectt" destino="qdectt" />
+				<campo origem="vlrctt" destino="vlrctt" />
+				<campo origem="qdeExecutada" destino="qdeExecutada" />
+				<campo origem="qdeAtual" destino="qdeAtual" />
+				<campo origem="vlrAtualctt" destino="vlrAtualctt" />
+				<campo origem="sitItem" destino="sitItem" />
+				<campo origem="datAlt" destino="datAlt" />
+				<campo origem="usrAlt" destino="usrAlt" />
+				<campo origem="datGrv" destino="datGrv" />
+				<campo origem="usrGrv" destino="usrGrv" />
+				<campo origem="percaditado" destino="percaditado" />
+			</sincronizacaoTabela>
+		</sincronizacaoBanco>
+	</sincronizacaoBancoLista>
+</sincronizacao>

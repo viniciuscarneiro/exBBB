@@ -2,12 +2,12 @@ package br.com.blacksheep.domain;
 
 import org.sqlite.JDBC;
 
-import br.com.blacksheep.enums.DataBaseEnum;
+import br.com.blacksheep.enums.DatabaseEnum;
 
 public class SQLite extends DataBase {
 
-	public SQLite(String user, String password, String server, String dataBase) {
-		super(DataBaseEnum.SQLITE.getDriver(), user, password, server, dataBase);
+	public SQLite(String user, String password, String server, String dataBase, DatabaseEnum dataBaseEnum) {
+		super(DatabaseEnum.SQLITE.getDriver(), user, password, server, dataBase);
 	}
 
 	@Override

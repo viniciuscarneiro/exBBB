@@ -1,11 +1,11 @@
 package br.com.blacksheep.domain;
 
-import br.com.blacksheep.enums.DataBaseEnum;
+import br.com.blacksheep.enums.DatabaseEnum;
 
 public class MySql extends DataBase {
 
-	public MySql(String user, String password, String server, String dataBase) {
-		super(DataBaseEnum.MYSQL.getDriver(), user, password, server, dataBase);
+	public MySql(String user, String password, String server, String dataBase, DatabaseEnum dataBaseEnum) {
+		super(dataBaseEnum.getDriver(), user, password, server, dataBase);
 	}
 
 	private final String url = "jdbc:mysql://";

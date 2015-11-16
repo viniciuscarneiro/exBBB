@@ -7,14 +7,14 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 import br.com.blacksheep.domain.ConnectionFactory;
-import br.com.blacksheep.domain.SQLite;
+import br.com.blacksheep.domain.DataBase;
+import br.com.blacksheep.enums.DatabaseEnum;
 
 public class ConectarSQLite {
 
 	public static void main(String[] args) {
 		try {
-			SQLite dataBase = new SQLite(null, null, "/home/vinicius-brito/Desktop/",
-					"AtendiServidorFotoPadrao.sqlite");
+			DataBase dataBase = DatabaseEnum.SQLITE.getDatabase(null, null, "/home/vinicius-brito/Desktop/", "AtendiServidorFotoPadrao.sqlite");
 
 			Connection conn = ConnectionFactory.createConnection(dataBase);
 
@@ -26,7 +26,6 @@ public class ConectarSQLite {
 				System.out.println("IMG120:" + executeQuery.getBytes("IMG120"));
 				System.out.println("IMG160" + executeQuery.getBytes("IMG160"));
 				System.out.println("IMG240:" + executeQuery.getBytes("IMG240"));
-
 			}
 		} catch (SQLException ex) {
 			JOptionPane.showMessageDialog(null, ex);
