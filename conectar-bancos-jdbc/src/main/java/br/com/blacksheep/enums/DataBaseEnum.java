@@ -1,11 +1,11 @@
-package br.com.blacksheep;
+package br.com.blacksheep.enums;
 
-public enum DataBaseDriver {
+public enum DataBaseEnum {
 
 	MYSQL("com.mysql.jdbc.Driver"),
 	SQLITE("org.sqlite.JDBC");
 
-	private DataBaseDriver(String driver) {
+	private DataBaseEnum(String driver) {
 		this.driver = driver;
 	}
 

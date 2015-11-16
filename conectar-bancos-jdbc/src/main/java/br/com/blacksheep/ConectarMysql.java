@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+import br.com.blacksheep.domain.MySql;
+
 public class ConectarMysql {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package br.com.blacksheep;
+package br.com.blacksheep.domain;
 
 public abstract class DataBase {
 

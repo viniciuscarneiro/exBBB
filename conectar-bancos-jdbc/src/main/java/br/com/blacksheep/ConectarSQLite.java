@@ -6,6 +6,8 @@ import java.sql.SQLException;
 
 import javax.swing.JOptionPane;
 
+import br.com.blacksheep.domain.SQLite;
+
 public class ConectarSQLite {
 
 	public static void main(String[] args) {
