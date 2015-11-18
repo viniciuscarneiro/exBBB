@@ -6,13 +6,13 @@ import java.sql.Statement;
 
 import br.com.blacksheep.domain.ConnectionFactory;
 import br.com.blacksheep.domain.DataBase;
-import br.com.blacksheep.enums.DatabaseEnum;
+import br.com.blacksheep.enums.DatabaseTypeEnum;
 
 public class ConectarMysql {
 
 	public static void main(String[] args) {
 		try {
-			DataBase dataBase = DatabaseEnum.MYSQL.getDatabase("root", "root", "localhost:3306", "atendi");
+			DataBase dataBase = DatabaseTypeEnum.MYSQL.getDatabase("root", "root", "localhost:3306", "atendi");
 			Connection conn = ConnectionFactory.createConnection(dataBase);
 			String query = "SELECT * FROM CATEGORIA_PRODUTO";
 			Statement st = conn.createStatement();

@@ -4,7 +4,7 @@ import br.com.blacksheep.domain.DataBase;
 import br.com.blacksheep.domain.MySql;
 import br.com.blacksheep.domain.SQLite;
 
-public enum DatabaseEnum {
+public enum DatabaseTypeEnum {
 
 	MYSQL("com.mysql.jdbc.Driver") {
 		@Override
@@ -19,7 +19,7 @@ public enum DatabaseEnum {
 		}
 	};
 
-	private DatabaseEnum(String driver) {
+	private DatabaseTypeEnum(String driver) {
 		this.driver = driver;
 	}
 

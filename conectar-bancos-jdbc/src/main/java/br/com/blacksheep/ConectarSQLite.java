@@ -8,13 +8,13 @@ import javax.swing.JOptionPane;
 
 import br.com.blacksheep.domain.ConnectionFactory;
 import br.com.blacksheep.domain.DataBase;
-import br.com.blacksheep.enums.DatabaseEnum;
+import br.com.blacksheep.enums.DatabaseTypeEnum;
 
 public class ConectarSQLite {
 
 	public static void main(String[] args) {
 		try {
-			DataBase dataBase = DatabaseEnum.SQLITE.getDatabase(null, null, "/home/vinicius-brito/Desktop/", "AtendiServidorFotoPadrao.sqlite");
+			DataBase dataBase = DatabaseTypeEnum.SQLITE.getDatabase(null, null, "/home/vinicius-brito/Desktop/", "AtendiServidorFotoPadrao.sqlite");
 
 			Connection conn = ConnectionFactory.createConnection(dataBase);
 
